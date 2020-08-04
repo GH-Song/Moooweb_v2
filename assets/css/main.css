@@ -1881,7 +1881,7 @@
 	}
 
 	header h2 + p {
-		font-size: 1.5em;
+		font-size: 1.5em; /*mobile title 크기*/
 		margin-top: -1em;
 	}
 
@@ -3061,7 +3061,9 @@
 			#banner {
 				padding: 3em 1.5em 0.5em 1.5em;
 			}
-
+			#banner h1 {
+				font-size: 2.2em;
+			}
 		}
 
 /* Footer */
@@ -3224,11 +3226,11 @@ img {vertical-align: middle;}
   margin-top: -22px;
   color: #ddd;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
 
 	left: 0;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 5px 5px 0;
 }
 
 /* Position the "next button" to the right */
@@ -3241,11 +3243,11 @@ img {vertical-align: middle;}
   margin-top: -22px;
   color: #ddd;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 22px;
   transition: 0.6s ease;
 
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 5px 0 0 5px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
