@@ -1562,7 +1562,7 @@
 	@media screen and (max-width: 480px) {
 
 		html, body {
-			min-width: 100%; /*mobile*/
+			min-width: 90%; /*mobile*/
 		}
 
 	}
@@ -1995,10 +1995,10 @@
 		@media screen and (max-width: 480px) {
 
 			.flex.flex-4 .box {
-				width: 100%;
+				width: 95%;
 			}
 			.flex.flex-5 .box {
-				width: 100%;
+				width: 95%;
 			}
 		}
 
