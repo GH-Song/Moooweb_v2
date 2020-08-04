@@ -1632,7 +1632,7 @@
 			}
 
 		}
-
+/*하이퍼링크*/
 	a {
 		color: #002629/*color changed*/;
 		text-decoration: underline;
@@ -1640,6 +1640,8 @@
 
 		a:hover {
 			text-decoration: none;
+			filter: brightness(150%);
+			text-shadow: 0.5px 0.5px 0.5px #aaa;
 		}
 
 	strong, b {
@@ -1665,7 +1667,7 @@
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
-			text-decoration: none;
+			/*text-decoration: none;*/
 		}
 
 	h2 {
@@ -2824,6 +2826,7 @@
 
 			#header a:hover {
 				color: #ffffff;
+				text-shadow: 1px 1px 1px #123;
 			}
 
 			#header a:last-child {
@@ -2999,7 +3002,7 @@
 	}
 
 		#banner h1 {
-			font-size: 2.7em;
+			font-size: 3.0em;
 			font-weight: 300;
 			color: #fff;
 			line-height: 1em;
