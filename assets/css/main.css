@@ -1562,7 +1562,7 @@
 	@media screen and (max-width: 480px) {
 
 		html, body {
-			min-width: 480px;
+			min-width: 100%; /*mobile*/
 		}
 
 	}
@@ -2880,7 +2880,7 @@
 
 		#header {
 			top: 0.5em;
-			min-width: 100%; /* mobile */
+			max-width: 100%; /* mobile */
 		}
 
 	}
