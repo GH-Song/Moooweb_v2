@@ -1640,8 +1640,8 @@
 
 		a:hover {
 			text-decoration: none;
-			filter: brightness(150%);
-			text-shadow: 0.5px 0.5px 0.5px #aaa;
+			filter: brightness(200%);
+			text-shadow: 0.3px 0.3px 0.2px #888;
 		}
 
 	strong, b {
@@ -1681,16 +1681,18 @@
 	}
 
 	h4 {
-		font-size: 1.0em;
+		font-size: 1.2em;
 		font-weight: 400;
 	}
 
 	h5 {
-		font-size: 0.9em;
+		font-size: 1.3em;
+		font-weight: 501;
 	}
 
 	h6 {
-		font-size: 0.7em;
+		font-size: 1.1em;
+		font-weight: 301;
 	}
 
 	sub {
@@ -1829,7 +1831,7 @@
 
 			/*이름 글씨*/
 			section.wrapper.style1 h4, article.wrapper.style1 h4 {
-				font-size : 1.1em;
+				font-size : 1.2em;
 				color: #FFF;
 			}
 
