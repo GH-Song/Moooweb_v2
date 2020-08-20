@@ -9,50 +9,94 @@
 		<title>MOOO LAB | KAIST</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--
 
-		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+-->
+		<link rel="stylesheet" href="package/css/swiper.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 
 		<style type="text/css">
-	    html, body {
-	      margin: 0;
-	      padding: 0;
-	    }
-	    .slider {
-	        max-width: 90%;
-	        margin: auto;
-	    }
-			.slick-prev:before,
-	    .slick-next:before {
-	      color: #dddddd;
-	    }
+		.swiper-container {
+				max-width: 95%;
+				height: 100%;
+				margin: auto;
+			}
+			.swiper-slide {
+				margin: auto;
+				text-align: center;
+				width: auto;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+
 	  </style>
 	</head>
 
 	<body>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a class='logo'>KAIST | Bio and Brain Engineering</a>
-					<nav id="nav">
-						<a href="index.html">Home</a>
-						<a href="Research.html">Research</a>
-						<a href="Publication.html">Publication</a>
-						<a href="People.html">People</a>
-						<a href="News.html">News</a>
-						<a href="Position.html">Position</a>
-					</nav>
-					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-				</div>
-			</header>
 
-		<!-- Banner -->
+		<!--
+			<div class="fixed-header">
+			<div class="header-content">
+				<h1 class="title">slick</h1>
+				<p class="subheading">the last carousel you'll ever need</p>
+				<ul class="nav">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="Research.html">Research</a>
+					</li>
+					<li>
+						<a href="Publication.html">Publication</a>
+					</li>
+					<li>
+						<a href="People.html">People</a>
+					</li>
+					<li>
+						<a href="News.html">News</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+ Fixed Header -->
+		<!-- Banner-->
 			<section id="banner">
+				<div class="inner">
 				<h1><a href="index.html" style="text-decoration:none"> Mooo Research Group </a> </h1>
 				<p>Optical Imaging & Light Manipulation</p>
+				</div>
 			</section>
+
+			<!-- Header -->
+				<header id="header">
+
+					<div class="inner">
+						<!--<a class='logo'>KAIST | Bio and Brain Engineering</a> -->
+						<nav id="nav">
+							<a href="index.html">Home</a>
+							<a href="Research.html">Research</a>
+							<a href="Publication.html">Publication</a>
+							<a href="People.html">People</a>
+							<a href="News.html">News</a>
+							<a href="Position.html">Position</a>
+						</nav>
+						<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+					</div>
+				</header>
 
 		<!-- research -->
 			<section id="one" class="wrapper special">
@@ -206,46 +250,62 @@
 						<p></p>
 					</header>
 
-					<div class = "slider autoplay">
-						<div class="person">
-							<div class="image semiround">
-								<img src="images/people/jang.jpg" style="max-width: 90%; max-height:230px; margin: auto;" alt="Person 1" />
-							</div>
-							<h4><br />Mooseok Jang</h4>
-							<h5>Group Leader</h5>
-						</div>
+					<div class="swiper-container multi">
+						<div class="swiper-wrapper">
 
-						<div class="person">
-							<div class="image semiround">
-								<img src="images/people/unknown.jpg"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 2" />
-							</div>
-							<h4><br />Taean Chang</h4>
-							<h5>Ph.D. candidate</h5>
-						</div>
+								<div class="swiper-slide">
+									<div class="person">
+										<div class="image semiround">
+											<img src="images/people/jang.jpg" style="max-width: 90%; max-height:230px; margin: auto;" alt="Person 1" />
+										</div>
+										<h4><br />Mooseok Jang</h4>
+										<h5>Group Leader</h5>
+									</div>
+								</div>
 
-						<div class="person">
-							<div class="image semiround">
-								<img src="images/people/Donggu.png"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 3" />
-							</div>
-							<h4><br />DongGu Lee</h4>
-							<h5>Ph.D. candidate</h5>
-						</div>
+								<div class="swiper-slide">
+									<div class="person">
+										<div class="image semiround">
+											<img src="images/people/unknown.jpg"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 2" />
+										</div>
+										<h4><br />Taean Chang</h4>
+										<h5>Ph.D. candidate</h5>
+									</div>
+								</div>
 
-						<div class="person">
-							<div class="image semiround">
-								<img src="images/people/SGH.jpg"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 4" />
-							</div>
-							<h4><br />GookHo Song</h4>
-							<h5>Master candidate</h5>
-						</div>
+								<div class="swiper-slide">
+									<div class="person">
+										<div class="image semiround">
+											<img src="images/people/Donggu.png"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 3" />
+										</div>
+										<h4><br />DongGu Lee</h4>
+										<h5>Ph.D. candidate</h5>
+									</div>
+								</div>
 
-						<div class="person">
-							<div class="image semiround">
-								<img src="images/people/unknown.jpg"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 6" />
-							</div>
-							<h4><br />Chanseok Lee</h4>
-							<h5>Master candidate</h5>
+								<div class="swiper-slide">
+									<div class="person">
+										<div class="image semiround">
+											<img src="images/people/SGH.jpg"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 4" />
+										</div>
+										<h4><br />GookHo Song</h4>
+										<h5>Master candidate</h5>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="person">
+										<div class="image semiround">
+											<img src="images/people/unknown.jpg"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 6" />
+										</div>
+										<h4><br />Chanseok Lee</h4>
+										<h5>Master candidate</h5>
+									</div>
+								</div>
 						</div>
+				    <!-- Add Arrows -->
+				    <div class="swiper-button-next"></div>
+				    <div class="swiper-button-prev"></div>
 					</div>
 
 				</div>
@@ -261,19 +321,18 @@
 						</center>
 					</header>
 
-					<div class="fade slider">
-				    <div>
-				      <img src="images/FIG3_LightManipulation_resize.jpg"   style="max-width: 90%; height:300px; margin: auto;" alt="Room 1">
-				    </div>
-				    <div>
-				      <img src="http://placehold.it/350x100?text=2"   style="max-width: 90%; height:300px; margin: auto;" alt="Room 1">
-				    </div>
-				    <div>
-				      <img src="http://placehold.it/350x100?text=3"   style="max-width: 90%; height:300px; margin: auto;" alt="Room 1">
-				    </div>
-				    <div>
-				      <img src="http://placehold.it/350x100?text=4"   style="max-width: 90%; height:300px; margin: auto;" alt="Room 1">
-				    </div>
+					<div class="swiper-container basic">
+
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide"><img src="images/FIG3_LightManipulation_resize.jpg"   style="max-width: 90%; height:300px; margin: auto;" alt="Room 1"></div>
+							<div class="swiper-slide"><img src="images/FIG3_LightManipulation_resize.jpg"   style="max-width: 90%; height:300px; margin: auto;" alt="Room 1"></div>
+							<div class="swiper-slide"><img src="images/FIG3_LightManipulation_resize.jpg"   style="max-width: 90%; height:300px; margin: auto;" alt="Room 1"></div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 				  </div>
 
 				</div>
@@ -301,31 +360,43 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/layerpopup.js"></script>
-			<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-			<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-			<script type="text/javascript" src="./slick/slick.min.js"></script>
-			<script type="text/javascript">
-		    $(document).on('ready', function(){
-					$('.autoplay').slick({
-					  slidesToShow: 4,
-					  slidesToScroll: 1,
-					  autoplay: true,
-					  autoplaySpeed: 3000,
-					});
-					$(".vertical-center").slick({
-		        dots: true,
-		        vertical: true,
-		        centerMode: true,
-		      });
-					$('.single-item').slick();
-					$('.fade').slick({
-					  dots: true,
-					  infinite: true,
-					  speed: 500,
-					  fade: true,
-					  cssEase: 'linear'
-					});
-		    });
-	  	</script>
+
+			<!--
+			<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+			<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+			-->
+			<script src="package/js/swiper.min.js"></script>
+				<!-- Initialize Swiper -->
+				<script>
+				new Swiper('.multi', {
+					slidesPerView: 4,
+					spaceBetween: 40,
+					slidesPerGroup: 1,
+					loop: true,
+					loopFillGroupWithBlank: false,
+					pagination: {
+						el: '.swiper-pagination',
+						clickable: true,
+					},
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+				});
+			    new Swiper('.basic', {
+			      slidesPerView: 1,
+			      spaceBetween: 30,
+			      loop: true,
+			      pagination: {
+			        el: '.swiper-pagination',
+			        clickable: true,
+			      },
+			      navigation: {
+			        nextEl: '.swiper-button-next',
+			        prevEl: '.swiper-button-prev',
+			      },
+			    });
+				</script>
+
 	</body>
 </html>
