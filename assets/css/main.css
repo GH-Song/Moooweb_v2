@@ -2783,14 +2783,15 @@
 		}
 
 	#header {
+		background-color:#000000;
+		position: fixed;
 		color: #d4e0ef;
 		cursor: default;
-		height: 2em;
+		height: 2.3em;
 		left: 0;
-		line-height: 2em;
-		position: absolute;
+		line-height: 2.3em;
 		text-align: right;
-		top: 0.5em;
+		top: 0.0em;
 		width: 100%;
 		z-index: 10001;
 	}
@@ -2866,9 +2867,7 @@
 	@media screen and (max-width: 980px) {
 
 		#header {
-			top: 0.5em;
-			height: 25px;
-			line-height: 25px;
+			top: 0em;
 		}
 
 	}
@@ -2876,7 +2875,7 @@
 	@media screen and (max-width: 736px) {
 
 		#header {
-			top: 0.5em;
+			top: 0em;
 		}
 
 	}
@@ -2884,7 +2883,7 @@
 	@media screen and (max-width: 480px) {
 
 		#header {
-			top: 0.5em;
+			top: 0em;
 			max-width: 100%; /* mobile */
 		}
 
