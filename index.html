@@ -9,9 +9,25 @@
 		<title>MOOO LAB | KAIST</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+
 		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+
+		<style type="text/css">
+	    html, body {
+	      margin: 0;
+	      padding: 0;
+	    }
+	    .slider {
+	        max-width: 90%;
+	        margin: auto;
+	    }
+			.slick-prev:before,
+	    .slick-next:before {
+	      color: #dddddd;
+	    }
+	  </style>
 	</head>
 
 	<body>
@@ -193,7 +209,7 @@
 					<div class = "slider autoplay">
 						<div class="person">
 							<div class="image semiround">
-								<img src="images/people/jang.jpg" width="180" height = "230" alt="Person 1" />
+								<img src="images/people/jang.jpg" style="max-width: 90%; max-height:230px; margin: auto;" alt="Person 1" />
 							</div>
 							<h4><br />Mooseok Jang</h4>
 							<h5>Group Leader</h5>
@@ -201,7 +217,7 @@
 
 						<div class="person">
 							<div class="image semiround">
-								<img src="images/people/unknown.jpg"  width="180" height = "230" alt="Person 2" />
+								<img src="images/people/unknown.jpg"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 2" />
 							</div>
 							<h4><br />Taean Chang</h4>
 							<h5>Ph.D. candidate</h5>
@@ -209,7 +225,7 @@
 
 						<div class="person">
 							<div class="image semiround">
-								<img src="images/people/Donggu.png"  width="180" height = "230" alt="Person 3" />
+								<img src="images/people/Donggu.png"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 3" />
 							</div>
 							<h4><br />DongGu Lee</h4>
 							<h5>Ph.D. candidate</h5>
@@ -217,7 +233,7 @@
 
 						<div class="person">
 							<div class="image semiround">
-								<img src="images/people/SGH.jpg"  width="180" height = "230" alt="Person 4" />
+								<img src="images/people/SGH.jpg"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 4" />
 							</div>
 							<h4><br />GookHo Song</h4>
 							<h5>Master candidate</h5>
@@ -225,7 +241,7 @@
 
 						<div class="person">
 							<div class="image semiround">
-								<img src="images/people/unknown.jpg"  width="180" height = "230" alt="Person 6" />
+								<img src="images/people/unknown.jpg"  style="max-width: 90%;  max-height:230px; margin: auto;" alt="Person 6" />
 							</div>
 							<h4><br />Chanseok Lee</h4>
 							<h5>Master candidate</h5>
@@ -245,36 +261,20 @@
 						</center>
 					</header>
 
-					<div class="slideshow-container">
-
-						<div class="mySlides fade">
-						  <div class="numbertext">1 / 3</div>
-							<img src="images/FIG3_LightManipulation_resize.jpg"   style="max-width: 90%; height:300px;" alt="Room 1">
-						  <div class="text">Caption Text</div>
-						</div>
-
-						<div class="mySlides fade">
-						  <div class="numbertext">2 / 3</div>
-						  <img src="http://placehold.it/300x100" style="max-width: 90%; height:300px;">
-						  <div class="text">Caption Two</div>
-						</div>
-
-						<div class="mySlides fade">
-						  <div class="numbertext">3 / 3</div>
-						  <img src="http://placehold.it/300x100" style="max-width: 90%; height:300px;">
-						  <div class="text">Caption Three</div>
-						</div>
-
-						<a class="prev" onclick="plusSlides(-1)" style="text-decoration:none">&#10094;</a>
-						<a class="next" onclick="plusSlides(1)" style="text-decoration:none">&#10095;</a>
-					</div>
-					<br />
-
-					<div style="text-align:center">
-					  <span class="dot" onclick="currentSlide(1)"></span>
-					  <span class="dot" onclick="currentSlide(2)"></span>
-					  <span class="dot" onclick="currentSlide(3)"></span>
-					</div>
+					<div class="fade slider">
+				    <div>
+				      <img src="images/FIG3_LightManipulation_resize.jpg"   style="max-width: 90%; height:300px; margin: auto;" alt="Room 1">
+				    </div>
+				    <div>
+				      <img src="http://placehold.it/350x100?text=2"   style="max-width: 90%; height:300px; margin: auto;" alt="Room 1">
+				    </div>
+				    <div>
+				      <img src="http://placehold.it/350x100?text=3"   style="max-width: 90%; height:300px; margin: auto;" alt="Room 1">
+				    </div>
+				    <div>
+				      <img src="http://placehold.it/350x100?text=4"   style="max-width: 90%; height:300px; margin: auto;" alt="Room 1">
+				    </div>
+				  </div>
 
 				</div>
 			</section>
@@ -289,10 +289,6 @@
 						<!--
 						<ul class="icons">
 							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
-							<li><a href="#" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a></li>
-							<li><a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
 						</ul>
 						-->
 					</div>
@@ -304,18 +300,30 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/slideshow.js"></script>
 			<script src="assets/js/layerpopup.js"></script>
 			<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 			<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-			<script type="text/javascript" src="slick/slick.min.js"></script>
+			<script type="text/javascript" src="./slick/slick.min.js"></script>
 			<script type="text/javascript">
-		    $(document).ready(function(){
+		    $(document).on('ready', function(){
 					$('.autoplay').slick({
 					  slidesToShow: 4,
 					  slidesToScroll: 1,
 					  autoplay: true,
 					  autoplaySpeed: 3000,
+					});
+					$(".vertical-center").slick({
+		        dots: true,
+		        vertical: true,
+		        centerMode: true,
+		      });
+					$('.single-item').slick();
+					$('.fade').slick({
+					  dots: true,
+					  infinite: true,
+					  speed: 500,
+					  fade: true,
+					  cssEase: 'linear'
 					});
 		    });
 	  	</script>
